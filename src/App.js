@@ -1,23 +1,19 @@
-import logo from './logo.svg';
 import './App.css';
+import EntradaMensal from './components/EntradaMensal';
+import Iniciar from './components/Iniciar';
 
 function App() {
+
+
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Controle de orçamento</h1>
+      <p>gerencie seu orçamento mensal de forma mais simplificada e acompanhente o seu rendimento para saber o quanto você gaste e quais as formas que vocÊ está gastando seu dinheiro e assim ajudar a controlar mais</p>
+      <Iniciar/>
+     
+      
+      
     </div>
   );
 }
