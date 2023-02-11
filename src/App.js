@@ -1,20 +1,26 @@
-import './App.css';
-import EntradaMensal from './components/EntradaMensal';
-import Iniciar from './components/Iniciar';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
+import Container from "./components/layout/Container";
+import EntradaMensal from "./components/pages/EntradaMensal";
+import SpreadSheet from "./components/pages/SpreadSheet";
+import TelaInicial from "./components/pages/TelaInicial";
+
+import Home from "./components/pages/Home";
+
 
 function App() {
 
-
-  
   return (
-    <div className="App">
-      <h1>Controle de orçamento</h1>
-      <p>gerencie seu orçamento mensal de forma mais simplificada e acompanhente o seu rendimento para saber o quanto você gaste e quais as formas que vocÊ está gastando seu dinheiro e assim ajudar a controlar mais</p>
-      <Iniciar/>
-     
+    <Router>
+      <Container>
+        <Routes>
+          <Route path="/" element={<TelaInicial />} />
+          <Route path="/home" element={<Home />}/>
+          <Route path="/entradamensal" element={<EntradaMensal />} />
+          <Route path="/spreadsheet" element={<SpreadSheet />} />
+        </Routes>
+      </Container>
       
-      
-    </div>
+    </Router>
   );
 }
 

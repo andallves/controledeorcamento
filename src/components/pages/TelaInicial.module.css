@@ -1,0 +1,46 @@
+.section {
+    width: 100%;
+    height: 100%vh;
+    background-color: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    padding: 6rem;
+    padding-left: 9rem;
+}
+.section h1 {
+    font-size: 5rem;
+    color: #fff;
+    font-weight: bold;
+    margin-bottom: .5em;
+}
+
+.section h2 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 1.5em;
+
+}
+
+.section p {
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+    margin-bottom: 4rem;
+    width: 50%;
+}
+
+.section h3 {
+    font-family: 'Nunito', sans-serif;
+    margin-bottom: 3rem;
+    color: #fff;
+    
+}
+.section div {
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 2rem;
+}
+
+
