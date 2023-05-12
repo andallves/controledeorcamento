@@ -8,9 +8,9 @@
     align-items: center;
     justify-content: center;
 }
-.tela h1 {
+.tela h2 {
     margin-bottom: 4rem;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #fff;
 }
@@ -21,6 +21,10 @@
 }
 .tela input {
     font-size: 1rem;
+}
+.tela form {
+    display: flex;
+    flex-direction: column;
 }
 .tela next {
     align-items: end;

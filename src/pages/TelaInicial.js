@@ -2,9 +2,9 @@ import StartButton from "../button/StartButton"
 import styles from "./TelaInicial.module.css"
 import TelaInicialImage from "../../img/imagem_tela_inicial.png"
 
-const TelaInicial = () => {
+export const TelaInicial = () => {
     return(
-        
+
             <section className={styles.section}>
                 <h1>
                     Controle Orçamentário Mensal
@@ -18,20 +18,20 @@ const TelaInicial = () => {
                 <h3>
                     Comece e gerencie as suas finanças agora mesmo!
                 </h3>
-                
+
                 <div>
-                    <StartButton to="/entradamensal" text="Start" />
-                    <StartButton to="/spreadsheet" text="Login" />
+                    <StartButton to="/cadastro:id" text="Start" />
+                    <StartButton to="/home" text="Login" />
 
                 </div>
-                
+
                 <div className={styles.imagem}>
                     <img src={TelaInicialImage} alt="Organização" />
                 </div>
 
             </section>
-            
-        
+
+
     )
-}
-export default TelaInicial
+};
+
