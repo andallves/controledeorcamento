@@ -16,13 +16,15 @@ module.exports = {
     SharedArrayBuffer: 'readonly',
   },
   parser: '@babel/eslint-parser',
-  requireConfigFile: false,
   parserOptions: {
     ecmaFeatures: {
       jsx: true,
     },
     ecmaVersion: 'latest',
     sourceType: 'module',
+    babelOptions: {
+      presets: ['@babel/preset-react'],
+    },
   },
   plugins: ['react', 'prettier', 'react-hooks'],
   settings: {
